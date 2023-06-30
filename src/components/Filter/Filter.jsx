@@ -1,8 +1,9 @@
+import React from 'react';
 import PropTypes from 'prop-types';
 
-const Filter = () => {
+const Filter = ({ setFilter }) => {
   const handleFilterChange = event => {
-    this.props.setFilter(event.target.value.toLowerCase());
+    setFilter(event.target.value.toLowerCase());
   };
 
   return (
